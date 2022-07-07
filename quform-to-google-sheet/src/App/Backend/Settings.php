@@ -47,7 +47,7 @@ class Settings extends Base
         if (function_exists('acf_add_options_page')) {
             acf_add_options_page([
                 'page_title' => 'Quform To Google Sheet',
-                'menu_title' => 'Quform To Google Sheet',
+                'menu_title' => 'Quform To <br />Google Sheet',
                 'menu_slug' => 'quform-to-google-sheet',
                 'capability' => 'edit_posts',
                 'icon_url' => 'dashicons-editor-table',
