@@ -36,8 +36,8 @@ class Example extends Base {
 		 * @see Bootstrap::__construct
 		 */
 
-		add_action( 'wp', [ $this, 'activationDeactivationExample' ] );
-		add_action( 'plugin_cronjobs', [ $this, 'cronjobRepeatingFunctionExample' ] );
+		//add_action( 'wp', [ $this, 'activationDeactivationExample' ] );
+		//add_action( 'plugin_cronjobs', [ $this, 'cronjobRepeatingFunctionExample' ] );
 	}
 
 	/**

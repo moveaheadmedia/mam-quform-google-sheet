@@ -36,7 +36,7 @@ class Shortcodes extends Base {
 		 * Add plugin code here
 		 */
 
-		add_shortcode( 'foobar', [ $this, 'foobarFunc' ] );
+		//add_shortcode( 'foobar', [ $this, 'foobarFunc' ] );
 	}
 
 	/**

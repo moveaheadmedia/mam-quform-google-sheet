@@ -15,6 +15,7 @@ namespace QuformToGoogleSheet\App\General;
 
 use QuformToGoogleSheet\Common\Abstracts\Base;
 use QuformToGoogleSheet\App\General\PostTypes;
+use WP_Query;
 
 /**
  * Class Queries
@@ -42,10 +43,10 @@ class Queries extends Base {
 	/**
 	 * @param $posts_count
 	 * @param string $orderby
-	 * @return \WP_Query
+	 * @return WP_Query
 	 */
 	public function getPosts( $posts_count, $orderby = 'date' ): \WP_Query {
-		return new \WP_Query(
+		return new WP_Query(
 			[
 				'post_type'      => PostTypes::POST_TYPE['id'],
 				'post_status'    => 'publish',
@@ -54,15 +55,5 @@ class Queries extends Base {
 				'orderby'        => $orderby,
 			]
 		);
-	}
-
-	/**
-	 * Example
-	 *
-	 * @return array
-	 */
-	public function getPostIds(): array {
-		global $wpdb;
-		return $wpdb->get_col( "select ID from {$wpdb->posts} LIMIT 3" );
 	}
 }

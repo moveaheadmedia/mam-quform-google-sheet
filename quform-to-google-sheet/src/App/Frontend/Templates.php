@@ -47,7 +47,7 @@ class Templates extends Base {
 		/**
 		 * Example code using the get template function with the use of arguments
 		 */
-		add_action( 'wp_footer', function () {
+		/*add_action( 'wp_footer', function () {
 			$this->get( 'test-template', null,
 				[
 					'class' => 'user',
@@ -56,6 +56,7 @@ class Templates extends Base {
 				]
 			);
 		} );
+		*/
 	}
 
 	/**

@@ -47,7 +47,7 @@ class PostTypes extends Base {
 		 *
 		 * Add plugin code here
 		 */
-		add_action( 'init', [ $this, 'register' ] );
+		//add_action( 'init', [ $this, 'register' ] );
 	}
 
 	/**
